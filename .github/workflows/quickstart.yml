@@ -17,7 +17,7 @@ jobs:
       - name: Remove all files in this repo
         run: |
           pwd ${{ github.workspace }}
-          rm -rf ${{ github.workspace }}/**/*
+          rm ${{ github.workspace }}/README.md
       - name: List files in the repository (after deleted)
         run: |
           ls ${{ github.workspace }}
